@@ -1,0 +1,13 @@
+@import "../styles.scss";
+.container {
+    background: $clr1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.page-container {
+    min-height: 80%;
+    width: 90%;
+}

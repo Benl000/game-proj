@@ -1,0 +1,26 @@
+@import "../../../styles.scss";
+:host {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: game;
+    background-image: linear-gradient(rgba(3, 3, 3, 0.568), rgb(3, 3, 3)), url("../../../assets/images/header_bg.jpg");
+    background-position: 100vw;
+    @media (max-width: 500px) {
+        align-items: center;
+        flex-direction: column;
+        & .home {
+            display: none;
+        }
+    }
+    & .home-btn {
+        cursor: pointer;
+        font-size: 70px;
+        text-align: center;
+    }
+    & a {
+        font-size: 30px;
+        color: $clr2;
+    }
+}
